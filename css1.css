@@ -1,56 +1,137 @@
-body
-{
+body {
     background-image: url(login.jpg);
     color: white;
 }
-.rdis
-{
+.rdis {
     border-radius: 90px;
 }
 
-.login-btn
-{
+.login-btn {
     margin-left: 130px;
     border-radius: 10px;
-    width:30%;
+    width: 30%;
 }
-.login-btn:hover
-{
-    background-color:chartreuse;
-    color:white;
+
+.login-btn:hover {
+    background-color: chartreuse;
+    color: white;
     transition: 0.4s;
     border-color: lemonchiffon;
 }
-.login-label
-{
+
+.login-label {
     text-align: center;
     padding: 5px;
     text-decoration: underline;
     color: white;
     margin-left: -40px;
 }
-.bg-form
-{
+
+.bg-form {
     padding: 40px;
 }
-h1 pre
-{
-    font-size:70px;
+
+h1 pre {
+    font-size: 70px;
     font-family: serif;
     color: white;
 }
-.home-icon
-{
+
+.home-icon {
     padding: 20px;
-    background-color:deepskyblue;
-    color:white;
+    background-color: deepskyblue;
+    color: white;
     text-decoration: none;
     border-radius: 90px;
 }
-.home-icon:hover
-{
-    background-color:chartreuse;
-    color:white;
+
+.home-icon:hover {
+    background-color: chartreuse;
+    color: white;
     transition: 0.4s;
     text-decoration: none;
+}
+
+
+nav ul {
+    float: right;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 50px;
+    line-height: 150px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 25px;
+    text-decoration: none;
+    background-color: orangered;
+    border-radius: 90px;
+    border: 5px solid white;
+border-bottom: 10em ;
+    border-right: 20px;
+
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: darkgreen;
+    transition: 1s all;
+    text-decoration: none;
+}
+
+
+.rdis {
+    border-radius: 90px;
+}
+
+.date {
+    border-radius: 90px;
+    padding: 10px;
+    background-color: black;
+    color: wheat;
+}
+
+.home-icon {
+    padding: 20px;
+    background-color: deepskyblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 90px;
+}
+
+.login-btn {
+    margin-left: 130px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.login-btn:hover {
+    background-color: chartreuse;
+    color: white;
+    transition: 0.4s;
+    border-color: lemonchiffon;
+}
+
+form
+{
+    color: azure;
+}
+.contactnav
+{
+
+    display: flex;
+    justify-content: center;
+ order: 10;
+
+
+
+}
+.navs
+{
+    margin-top: 20px;
 }

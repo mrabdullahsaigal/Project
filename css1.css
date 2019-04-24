@@ -124,14 +124,41 @@ form
 .contactnav
 {
 
-    display: flex;
-    justify-content: center;
- order: 10;
+    display:inline-block;;
+
 
 
 
 }
 .navs
 {
-    margin-top: 20px;
+    margin-top:100px;
 }
+.home-icon { margin-left:1080px;
+    margin-top: 60px;
+}
+.centered-form{
+    margin-top: 80px;
+}
+
+.centered-form .panel{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.panel-default
+{
+width:800px;
+
+
+}
+.about
+{ text-align: center;
+    font-family: Playbill;
+
+
+}
+p{
+    font-family: Calibri;
+  margin-left: 2px;
+    margin-left: 2px;
+ }

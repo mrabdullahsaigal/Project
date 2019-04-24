@@ -1,4 +1,56 @@
 body
 {
-    background-image: url(motors.jpg);
+    background-image: url(login.jpg);
+    color: white;
+}
+.rdis
+{
+    border-radius: 90px;
+}
+
+.login-btn
+{
+    margin-left: 130px;
+    border-radius: 10px;
+    width:30%;
+}
+.login-btn:hover
+{
+    background-color:chartreuse;
+    color:white;
+    transition: 0.4s;
+    border-color: lemonchiffon;
+}
+.login-label
+{
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    color: white;
+    margin-left: -40px;
+}
+.bg-form
+{
+    padding: 40px;
+}
+h1 pre
+{
+    font-size:70px;
+    font-family: serif;
+    color: white;
+}
+.home-icon
+{
+    padding: 20px;
+    background-color:deepskyblue;
+    color:white;
+    text-decoration: none;
+    border-radius: 90px;
+}
+.home-icon:hover
+{
+    background-color:chartreuse;
+    color:white;
+    transition: 0.4s;
+    text-decoration: none;
 }

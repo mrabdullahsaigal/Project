@@ -25,15 +25,16 @@
          <h3 class="login-label col-md-3">FORGET-PASSWORD</h3>
        <div class="form-group col-md-6 "> 
              <label for="inputEmail4" style="font-size: 20px;"><i>Email</i></label>
-        <input type="email" class="form-control rdis" id="inputEmail" required>
+        <input type="email" class="form-control rdis" id="inputEmail" required pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
   </div>
      <div class="form-group col-md-6">
       <label for="inputPassword4"style="font-size: 20px;"><i>Password</i></label>
-      <input type="password" class="form-control rdis" id="inputPassword4" placeholder="Password"required>
-           <small id="passwordHelpInline"> 
-      Must be 8-20 characters long.
-    </small>
+      <input type="password" class="form-control rdis" id="inputPassword4" placeholder="Password"required pattern="^(?=.*\d).{4,8}$">
+           <small id="passwordHelpInline">
+               Password must be between 4 and 8 digits long and include at least one numeric digit.
+
+           </small>
     </div>
          <div class="form-group col-md-6">
       <label for="inputPassword4"style="font-size: 20px;"><i>Re-enter Password</i></label>

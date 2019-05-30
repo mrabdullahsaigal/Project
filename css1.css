@@ -2,6 +2,18 @@ body {
     background-image: url(login.jpg);
     color: white;
 }
+input[id="data1"]:invalid{
+    background-color: red;
+}
+input[id="fname"]:invalid{
+    background-color: red;
+}
+input[id="lname"]:invalid{
+    background-color: red;
+}
+input[id="rpw"]:invalid{
+    background-color: red;
+}
 .rdis {
     border-radius: 90px;
 }
@@ -157,6 +169,10 @@ p{
   margin-left: 2px;
     margin-left: 2px;
  }
+input[id="data"]:invalid{
+    background-color: red;
+}
+
 .responsive
 {
     padding: 80px;

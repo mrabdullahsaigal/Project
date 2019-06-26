@@ -3,7 +3,7 @@ body {
     color: white;
 }
 input[id="data1"]:invalid{
-    background-color: red;
+    background-color:yellow;
 }
 input[id="fname"]:invalid{
     background-color: red;
@@ -12,12 +12,11 @@ input[id="lname"]:invalid{
     background-color: red;
 }
 input[id="rpw"]:invalid{
-    background-color: red;
+    background-color:yellow;
 }
 .rdis {
     border-radius: 90px;
 }
-
 .login-btn {
     margin-left: 130px;
     border-radius: 10px;
@@ -64,56 +63,11 @@ h1 pre {
     text-decoration: none;
 }
 
-
-nav ul {
-    float: right;
-    padding: 20px;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    line-height: 40px;
-    margin-left: 10px;
-}
-
-nav ul li a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    background-color:blue;
-    border-radius: 90px;
-    border: 5px solid white;
-border-bottom: 10em ;
-    border-right: 20px;
-
-}
-
-nav ul li a:hover {
-    color: white;
-    background-color: darkgreen;
-    transition: 1s all;
-    text-decoration: none;
-}
-
-
-.rdis {
-    border-radius: 90px;
-}
-
 .date {
     border-radius: 90px;
     padding: 10px;
     background-color: black;
     color: wheat;
-}
-
-.home-icon {
-    padding: 20px;
-    background-color: deepskyblue;
-    color: white;
-    text-decoration: none;
-    border-radius: 90px;
 }
 
 .login-btn {
@@ -170,7 +124,8 @@ p{
     margin-left: 2px;
  }
 input[id="data"]:invalid{
-    background-color: red;
+    background-color:yellow;
+}
 }
 
 .responsive

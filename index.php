@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>Modern Machines</title>
+    <title>Modern Machinery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 "name="keywords" content="1 inch submersible pump,110v water pump,
 12 volt submersible pump,

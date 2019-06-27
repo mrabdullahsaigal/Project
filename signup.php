@@ -4,24 +4,31 @@ error_reporting(0);
 ?>
 <?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submit'])) {
     //getting text data from the fields
     $pro_fname = $_POST['firstname'];
-    $pro_lname= $_POST['lastname'];
+    $pro_lname = $_POST['lastname'];
     $pro_email = $_POST['email'];
     $pro_dob = $_POST['DOB'];
     $pro_password = $_POST['pass'];
     $pro_gender = $_POST['gender'];
 
+if ($pro_fname=="" || $pro_lname==""|| $pro_dob=="" || $pro_email=="" || $pro_gender=="" || $pro_password=="")
+{
 
+    $pro_fname = $_POST['firstname'];
+    $pro_lname = $_POST['lastname'];
+    $pro_email = $_POST['email'];
+    $pro_dob = $_POST['DOB'];
+    $pro_password = $_POST['pass'];
+    $pro_gender = $_POST['gender'];
+}
+else {
+    $query = "insert into  users  values('$pro_fname','$pro_lname','$pro_email','   $pro_password ','$pro_dob','$pro_gender')";
+    mysqli_query($conn, $query);
+    $insert_pro = mysqli_query($conn, $query);
 
-    $query="insert into  users  values('$pro_fname','$pro_lname','$pro_email','   $pro_password ','$pro_dob','$pro_gender')";
-    mysqli_query($conn,$query);
-    $insert_pro = mysqli_query($conn,$query);
-    if($insert_pro)
-    {
-        header("location: ".$_SERVER['PHP_SELF']);
-    }
+}
 }
 ?>
 <!DOCTYPE html>
@@ -32,7 +39,7 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css1.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -163,3 +170,11 @@ if(isset($_POST['submit'])){
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php
+if($_POST['submit'])
+    if (!isset($pro_fname)) {
+
+        echo "enter first name";
+    }
+
+?>

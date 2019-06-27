@@ -1,9 +1,10 @@
 <?php
-require_once 'db_connection.php';
+error_reporting(0);
+require_once 'database.php';
 if(isset($_POST['login'])){
 $email = $_POST['user_email'];
 $pass = $_POST['user_pass'];
-$sel_user = "select * from users where user_email='$email' AND user_pass='$pass'";
+$sel_user = "select * from users where email='$email' AND PASSWORD='$pass'";
 $run_user = mysqli_query($conn, $sel_user);
 $check_user = mysqli_num_rows($run_user);
 if($check_user==0){
@@ -40,31 +41,45 @@ else
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
-        <div class="row align-items-center position-relative">
-            <div class="site-logo">
-                <a href="index.php" class="text-black"><span class="text-danger" style="font-size:22px">MODERN MACHINES</span></a>
-            </div>
+          <div class="row bg-primary">
+              <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-            <div class="col-11">
-              <nav class="site-navigation text-center " role="navigation">
+                  <div class="container">
+                      <div class="row align-items-center position-relative">
+                          <div class="site-logo">
+                              <a href="index.php" class="text-black"><span class="text-danger" style="font-size:22px">MODERN MACHINES</span></a>
+                          </div>
 
-                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li class="hov"><a href="index.php" class="nav-link">Home</a></li>
-                <li class="hov"><a href="login.php" class="nav-link">Login</a></li>
-                <li class="hov"><a href="forget.php" class="nav-link">Forget-password</a></li>
-                <li class="hov"><a href="signup.php" class="nav-link">SignUp</a></li>
+                          <div class="col-11">
+                              <nav class="site-navigation text-center " role="navigation">
 
-                <li><a href="about.php" class="nav-link">About</a></li>
-                <li><a href="contacts.php" class="nav-link">Contact</a></li>
-              </ul>
-              </nav>
-            </div>
-          <div class="toggle-button align-items-center d-flex">
-            <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+                                  <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                                      <li class="hov"><a href="index.php" class="nav-link">Home</a></li>
+                                      <li class="hov"><a href="login.php" class="nav-link">Login</a></li>
+                                      <li class="hov"><a href="forget.php" class="nav-link">Forget-password</a></li>
+                                      <li class="hov"><a href="signup.php" class="nav-link">SignUp</a></li>
+
+                                      <li><a href="about.php" class="nav-link">About</a></li>
+                                      <li><a href="contacts.php" class="nav-link">Contact</a></li>
+                                  </ul>
+                              </nav>
+                          </div>
+                          <div class="toggle-button align-items-center d-flex">
+                              <nav class="navbar navbar-light bg-light">
+                                  <form class="form-inline">
+                                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                  </form>
+                              </nav>
+                          </div>
+
+                      </div>
+                  </div>
+
+              </header>
+          </div>
+
+
 </nav>
           </div>
 
@@ -75,16 +90,16 @@ else
         </div>
     <!--form----------------------------------------------------------------------->
     <div class="container-fluid mt-5 bg-form">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" novalidate action="login.php" method="post">
          <h3 class="login-label col-md-2">SIGN IN</h3>
        <div class="form-group col-md-6 was-validated"> 
              <label for="inputEmail4" style="font-size: 20px;"><i>Email</i></label>
-        <input  id ="data1" type="email" class="form-control is-valid rdis text-muted" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+        <input  id ="data1" type="email" name="user_email" class="form-control is-valid rdis text-muted" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
   </div>
      <div class="form-group col-md-6 was-validated">
       <label for="inputPassword4"style="font-size: 20px;"><i>Password</i></label>
-      <input id="data" type="password" class="form-control rdis text-muted" id="inputPassword4" placeholder="Password"required pattern=".{8,20}">
+      <input id="data" type="password" class="form-control rdis text-muted" id="inputPassword4" name="user_pass" placeholder="Password"required pattern=".{8,20}">
            <div class="valid-feedback">
         Looks good!
       </div>
@@ -104,15 +119,17 @@ else
       </div>
     </div>
   </div>
-        <button  id = click class="btn btn-primary login-btn" type="submit">Login</button>
+        <button  id = click class="btn btn-primary login-btn" type="submit" name="login">Login</button>
             </form>
-           <a href="forget.html">Forget Password?</a>
+
+        <div><?php echo $error_msg;?></div>
+           <a href="forget.php">Forget Password?</a>
 
     </div>
     
     <!--end form--------------------------------------------------------------------->
     <div>
-    <h4>Don't Have an Account? <a href="signup.html">SIGN UP</a></h4>
+    <h4>Don't Have an Account? <a href="signup.php">SIGN UP</a></h4>
     </div>
 
     <!--------------------------------------------------------------------------------------------------------------->

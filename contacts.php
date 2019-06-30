@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="1 inch submersible pump,110v water pump,
+12 volt submersible pump,
+120v water pump,
+12kw diesel generator,
+12v water pump">
+
     <title>Contacts</title>
 
     <link rel="stylesheet" type="text/css" href="css1.css">
@@ -9,7 +15,7 @@
             <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="row bg-white">
+  <div class="container-fluid row bg-white">
    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">

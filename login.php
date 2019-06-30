@@ -29,6 +29,12 @@ else
 <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="1 inch submersible pump,110v water pump,
+12 volt submersible pump,
+120v water pump,
+12kw diesel generator,
+12v water pump">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css1.css">
     <link rel="stylesheet" href="style.css">
@@ -37,7 +43,7 @@ else
 
     
 <!--------------------------------------------------------------------------------------------------------------->
-    <div class="row bg-white">
+    <div class="container-fluid row bg-white">
    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">

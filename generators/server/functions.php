@@ -8,7 +8,7 @@ function getCats(){
     while($row = mysqli_fetch_assoc($getCatsResult)){
         $cat_id = $row['cat_id'];
         $cat_title = $row['cat_title'];
-        echo "<li><a class='nav-link '  href='index.php?cat=$cat_id'>$cat_title</a></li>";
+        echo "<li><a class='nav-link'  href='index.php?cat=$cat_id'>$cat_title</a></li>";
     }
 }
 function getBrands(){
@@ -30,7 +30,6 @@ function getPro(){
         $getProQuery = "select * from products order by RAND();";
     }
     else if(isset($_GET['cat'])){
-        
         $pro_cat_id = $_GET['cat'];
         $getProQuery = "select * from products where pro_cat = '$pro_cat_id'";
     }

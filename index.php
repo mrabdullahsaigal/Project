@@ -4,7 +4,8 @@
   <head>
     <title>Modern Machinery</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 "name="keywords" content="1 inch submersible pump,110v water pump,
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <meta name="keywords" content="1 inch submersible pump,110v water pump,
 12 volt submersible pump,
 120v water pump,
 12kw diesel generator,
@@ -103,7 +104,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Generators</h1>
               <p>generators of different brands</p>
-              <p><a href="generators/generators.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="generators/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -144,7 +145,7 @@
               <h3 class="font-size-20 text-black">Generators</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div>
-               <button type="button" class="btn btn-dark"><a href="generators/generators.php">Search</a></button>
+               <button type="button" class="btn btn-dark"><a href="generators/index.php">Search</a></button>
               </div>
             </div>
           </div>
@@ -178,7 +179,14 @@
         </div>
       </div>
     </div>
-
+    <div class="ml-5">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4MADaQWTuUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4MADaQWTuUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   <audio controls>
+  <source src="dial-up-modem-1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
 
     <footer>
         <div class="text-center text-dark">

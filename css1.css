@@ -1,5 +1,5 @@
 body {
-    background-image: url(login.jpg);
+   background-image: url(images/centrifugal-pumps.jpg);
     color: white;
 }
 input[id="data1"]:invalid{
@@ -22,7 +22,10 @@ input[id="rpw"]:invalid{
     border-radius: 10px;
     width: 30%;
 }
-
+.search{
+    background-color: chartreuse;
+    color: black;
+}
 .login-btn:hover {
     background-color: chartreuse;
     color: white;

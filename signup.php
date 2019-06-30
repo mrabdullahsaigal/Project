@@ -171,6 +171,13 @@ else {
             </form>
            <a href="forget.html">Forget Password?</a>
     </div>
+     <footer>
+        <div class="text-center text-dark">
+            <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
+            </p>
+            </div>
+    </footer>
     <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {

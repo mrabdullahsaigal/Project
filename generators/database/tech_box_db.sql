@@ -57,9 +57,9 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
-(1, 'Apple'),
-(2, 'Dell'),
-(3, 'Samsung'),
+(1, 'Hyndai'),
+(2, 'Golden'),
+(3, 'yamaha'),
 (4, 'Toshiba'),
 (6, 'Oppo'),
 (7, 'Sony'),

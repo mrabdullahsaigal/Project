@@ -135,7 +135,13 @@ if(isset($_POST['submit'])) {
     <div>
     <h4>Don't Have an Account? <a href="signup.php">SIGN UP</a></h4>
     </div>
-
+ <footer>
+        <div class="text-center text-dark">
+            <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
+            </p>
+            </div>
+    </footer>
 
     <!--------------------------------------------------------------------------------------------------------------->
 

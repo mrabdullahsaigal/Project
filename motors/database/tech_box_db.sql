@@ -57,9 +57,9 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
-(1, 'Apple'),
-(2, 'Dell'),
-(3, 'Samsung'),
+(1, 'Hyndai'),
+(2, 'Golden'),
+(3, 'yamaha'),
 (4, 'Toshiba'),
 (6, 'Oppo'),
 (7, 'Sony'),
@@ -81,12 +81,15 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
-(1, 'Jasco'),
-(2, 'Elemax'),
-(5, 'Angel'),
-(6, 'Honda'),
-(7, 'Yamaha'),
-(8, 'Homagr');
+(1, 'Laptops'),
+(2, 'Computers'),
+(5, 'Tablets'),
+(6, 'Watches'),
+(7, 'Cameras'),
+(8, 'iPads'),
+(9, 'Projectors'),
+(10, 'Mobiles');
+
 -- --------------------------------------------------------
 
 --

@@ -91,7 +91,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Pumps</h1>
               <p>pumps of different brands</p>
-              <p><a href="pumps/pumps.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="pumps/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Motors</h1>
               <p>motors of different brands</p>
-              <p><a href="motors/motors.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="motors/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@
               <h3 class="font-size-20 text-black">Pumps</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div class="block-social-1">
-                 <button type="button" class="btn btn-dark"><a href="pumps/pumps.php">Search</a></button>
+                 <button type="button" class="btn btn-dark"><a href="pumps/index.php">Search</a></button>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@
               <h3 class="font-size-20 text-black">Motors</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div class="block-social-1">
-                 <button type="button" class="btn btn-dark"><a href="motors/motors.php">Search</a></button>
+                 <button type="button" class="btn btn-dark"><a href="motors/index.php">Search</a></button>
               </div>
             </div>
           </div>

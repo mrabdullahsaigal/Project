@@ -255,7 +255,7 @@ function test_input($data)
     <div class="row my-3">
         <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto"></div>
         <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
-            <button type="submit" name="insert_pro" class="btn btn-primary btn-block"><i class="fas fa-plus"></i>
+            <button type="submit" name="insert_pro" class="btn btn-primary btn-block bg-warning text-dark"><i class="fas fa-plus"></i>
                 Insert Now
             </button>
         </div>

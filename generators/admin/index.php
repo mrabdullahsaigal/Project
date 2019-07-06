@@ -28,9 +28,9 @@ require_once "db_connection.php";
 <div class="wrapper">
     <nav id="sidebar">
         <div class="sidebar-header">
-            <h3><img src="../media/logo.png"> Admin Panel</h3>
+            <h3><img src="../media/logo.jpg" height="100px" width="100px"> Admin Panel</h3>
         </div>
-        <ul class="list-unstyled components">
+        <ul class="list-unstyled components bg-success" style="color:black">
             <li>
                 <a href="index.php?insert_product">
                     <i class="fas fa-plus"></i> Insert New Product
@@ -64,14 +64,8 @@ require_once "db_connection.php";
                 <a href="index.php?view_customers">
                     <i class="fa fa-user-tie"></i> View Customers</a>
             </li>
-            <li>
-                <a href="index.php?view_orders">
-                    <i class="fa fa-shopping-bag"></i> View Orders</a>
-            </li>
-            <li>
-                <a href="index.php?view_payments">
-                    <i class="fa fa-credit-card"></i> View Payments</a>
-            </li>
+           
+           
             <li>
                 <a href="logout.php">
                     <i class="fa fa-sign-out-alt"></i> Admin logout</a>
@@ -79,9 +73,9 @@ require_once "db_connection.php";
         </ul>
     </nav>
     <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
             <div class="container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <button type="button" id="sidebarCollapse" class="btn btn-info bg-dark">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>

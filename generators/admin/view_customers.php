@@ -1,31 +1,39 @@
 <div class="row">
     <div class="col-sm-12">
-        <h1>Products</h1>
+        <h1>Customers</h1>
         <table class="table table-striped">
             <thead>
             <tr>
-                <th scope="col">customers</th>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Address</th>
             </tr>
             </thead>
             <tbody>
             <?php
-            $get_pro = "select * from customers";
-            $run_pro = mysqli_query($con,$get_pro);
-            $count_pro = mysqli_num_rows($run_pro);
-            if($count_pro==0){
-                echo "<h2> No Product found in selected criteria </h2>";
+            $get_cust = "select * from customers";
+            $run_cust = mysqli_query($con,$get_cust);
+            $count_cust = mysqli_num_rows($run_cust);
+            if($count_cust==0){
+                echo "<h2> No Customer found in selected criteria </h2>";
             }
             else {
                 $i = 0;
-                while ($row_pro = mysqli_fetch_array($run_pro)) {
-                 
-                    $pro_cat = $row_pro['cust_name'];
-                  
+                while ($row_cust = mysqli_fetch_array($run_cust)) {
+                    $cust_id = $row_cust['cust_id'];
+                    $cust_name = $row_cust['cust_name'];
+                    $cust_email = $row_cust['cust_email'];
+                    $cust_contact = $row_cust['cust_contact'];
+                    $cust_address = $row_cust['cust_address'];
                     ?>
                     <tr>
                         <th scope="row"><?php echo ++$i; ?></th>
-                        <td><?php echo $pro_cat; ?></td>
-                      
+                        <td><?php echo $cust_name; ?></td>
+                        <td><?php echo $cust_email; ?></td>
+						<td><?php echo $cust_contact; ?></td>
+						<td><?php echo $cust_address; ?></td>
                     </tr>
                     <?php
                 }

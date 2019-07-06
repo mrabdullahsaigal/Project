@@ -10,23 +10,23 @@ if (!$con)
 <?php
 
 
-if (isset($_POST['insert_cat'])) {
+if (isset($_POST['insert_brand'])) {
     
-    $cat_title = test_input($_POST['cat_title']);
-    if (!preg_match("/[a-zA-Z0-9]+/", $cat_title) || strlen($cat_title) < 2) {
+    $brand_title = test_input($_POST['brand_title']);
+    if (!preg_match("/[a-zA-Z0-9]+/", $brand_title) || strlen($brand_title) < 2) {
         $response = array(
             "type" => "warning",
-            "message" => "Enter Valid Category title."
+            "message" => "Enter Valid brand."
         );
     } 
 	else{
-		$insert_category = "insert into categories(cat_title) VALUES ('$cat_title');";
-        $insert_cat = mysqli_query($con, $insert_category);
-        if ($insert_cat) {
+		$insert_brand = "insert into brands(brand_title) VALUES ('$brand_title');";
+        $insert_brand = mysqli_query($con, $insert_brand);
+        if ($insert_brand) {
              //header("location: ".$_SERVER['PHP_SELF']);
              $response = array(
              "type" => "success",
-             "message" => "Category uploaded successfully."
+             "message" => "brand uploaded successfully."
              );
         }
 	}
@@ -42,7 +42,7 @@ function test_input($data)
 
 ?>
 <h1 class="text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-sm-inline"> Add New </span>
-    Category </h1>
+    Brand </h1>
 <?php if (!empty($response)) { ?>
 	<div class="alert alert-<?php echo $response["type"]; ?>">
 		<?php echo $response["message"]; ?>
@@ -51,7 +51,7 @@ function test_input($data)
 <form action="" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
-            <label for="cat_title" class="float-md-right"> <span class="d-sm-none d-md-inline"> Category </span>
+            <label for="cat_title" class="float-md-right"> <span class="d-sm-none d-md-inline"> Brand </span>
                 Title:</label>
         </div>
         <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
@@ -59,11 +59,11 @@ function test_input($data)
                 <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-file-signature"></i></div>
                 </div>
-                <input type="text" class="form-control" id="cat_title" name="cat_title"
-                       placeholder="Enter Category Title"
+                <input type="text" class="form-control" id="brand_title" name="brand_title"
+                       placeholder="Enter Brand"
                       <?php
                     if (@$response["type"] == "warning") {
-                        echo "value='$cat_title'";
+                        echo "value='$brand_title'";
                     }
                     ?>
                 >
@@ -73,7 +73,7 @@ function test_input($data)
     <div class="row my-3">
         <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto"></div>
         <div class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
-            <button type="submit" name="insert_cat" class="btn btn-primary btn-block"><i class="fas fa-plus"></i>
+            <button type="submit" name="insert_brand" class="btn btn-primary btn-block"><i class="fas fa-plus"></i>
                 Insert Now
             </button>
         </div>

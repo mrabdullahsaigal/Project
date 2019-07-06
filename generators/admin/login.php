@@ -36,7 +36,7 @@ if(isset($_POST['login'])){
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <title>Admin Login</title>
 </head>
-<body class="text-center">
+<body class="text-center bg-primary">
     <form class="login_form" action="login.php" method="post">
         <h2 class="text-danger"><?php echo @$_GET['not_admin']?></h2>
         <h2 class="text-primary"><?php echo @$_GET['logged_out']?></h2>
@@ -44,6 +44,7 @@ if(isset($_POST['login'])){
         <div><?php echo $error_msg;?></div>
         <input type="text" id="user_email" name="user_email"
                value="<?php echo @$_COOKIE['user_email']?>" class="form-control" placeholder="Email address" required autofocus>
+               <br>
         <input type="password" id="user_pass" name="user_pass"
                value="<?php echo @$_COOKIE['user_pass']?>" class="form-control" placeholder="Password" required><br>
         <div class="form-check">

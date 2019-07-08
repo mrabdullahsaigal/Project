@@ -1,16 +1,6 @@
 <?php
 require_once "db_connection.php";
 
-function getCats(){
-    global $con;
-    $getCatsQuery = "select * from categories";
-    $getCatsResult = mysqli_query($con,$getCatsQuery);
-    while($row = mysqli_fetch_assoc($getCatsResult)){
-        $cat_id = $row['cat_id'];
-        $cat_title = $row['cat_title'];
-        echo "<li><a class='nav-link'  href='index.php?cat=$cat_id'>$cat_title</a></li>";
-    }
-}
 function getBrands(){
     global $con;
     $getBrandsQuery = "select * from brands";

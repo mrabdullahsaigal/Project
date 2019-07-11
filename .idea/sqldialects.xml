@@ -2,5 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$USER_HOME$/Downloads/wad_project.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/final_wad-master/wad_project.sql" dialect="MariaDB" />
   </component>
 </project>

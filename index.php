@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="bootstrap-datepicker.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -65,7 +65,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="about.php">About</a>
+        <a class="nav-link" href="pages/about.php">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contacts.php">Contact-Us</a>
@@ -91,7 +91,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Pumps</h1>
               <p>pumps of different brands</p>
-              <p><a href="pumps/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="admins/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Generators</h1>
               <p>generators of different brands</p>
-              <p><a href="generators/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="admins/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="col-md-12 col-lg-7">
               <h1>Motors</h1>
               <p>motors of different brands</p>
-              <p><a href="motors/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
+              <p><a href="admins/index.php" class="btn btn-outline-primary border-w-2 btn-md">Get in touch</a></p>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
               <h3 class="font-size-20 text-black">Generators</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div>
-               <button type="button" class="btn btn-dark"><a href="generators/index.php">Search</a></button>
+               <button type="button" class="btn btn-dark"><a href="admins/index.php">Search</a></button>
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@
               <h3 class="font-size-20 text-black">Pumps</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div class="block-social-1">
-                 <button type="button" class="btn btn-dark"><a href="pumps/index.php">Search</a></button>
+                 <button type="button" class="btn btn-dark"><a href="admins/index.php">Search</a></button>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@
               <h3 class="font-size-20 text-black">Motors</h3>
               <p class="px-3 mb-3">Click to search more</p>
               <div class="block-social-1">
-                 <button type="button" class="btn btn-dark"><a href="motors/index.php">Search</a></button>
+                 <button type="button" class="btn btn-dark"><a href="admins/index.php">Search</a></button>
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@
 
    </div>
    <audio controls>
-  <source src="dial-up-modem-1.wav" type="audio/wav">
+  <source src="sound/dial-up-modem-1.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 

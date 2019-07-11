@@ -57,6 +57,16 @@ require_once "db_connection.php";
                 </a>
             </li>
             <li>
+                <a href="index.php?del_pro">
+                    <i class="fas fa-trash-alt"></i> Delete product
+                </a>
+            </li>
+             <li>
+                <a href="index.php?edit_pro">
+                    <i class="fas fa-edit"></i> Edit product
+                </a>
+            </li>
+            <li>
                 <a href="index.php?view_brands">
                     <i class="fas fa-toolbox"></i> View All Brands</a>
             </li>
